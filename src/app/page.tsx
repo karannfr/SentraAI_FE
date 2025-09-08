@@ -20,7 +20,7 @@ const ChatBubble = ({ message }: { message: Message }) => {
   return (
     <div className={`flex ${isUser ? 'justify-end' : 'justify-start'} w-full`}>
       <div className={`${bubbleClasses} ${alignmentClasses}`}>
-        <p className="text-sm md:text-base">{text}</p>
+        <p className="text-sm md:text-base whitespace-pre-wrap">{text}</p>
       </div>
     </div>
   );
