@@ -127,7 +127,7 @@ export default function ChatPage() {
 
       const data = await response.json();
 
-      if (data.response && data.thread_id) {
+      if (data.response) {
         const aiMessage: Message = { text: data.response, sender: 'ai' };
         setMessages(prev => [...prev, aiMessage]);
         threadIdRef.current = data.thread_id; // Persist the thread_id
@@ -145,7 +145,7 @@ export default function ChatPage() {
   };
 
   return (
-    <main className="flex flex-col h-screen bg-gray-900 text-white font-sans">
+    <main className="flex flex-col h-screen bg-black text-white font-sans">
       <header className="p-4">
           <h1 className="text-xl font-bold text-center">SentraAI Demo</h1>
       </header>

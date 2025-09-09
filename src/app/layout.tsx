@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Next.js Chat',
-  description: 'A ChatGPT-like interface built with Next.js and Tailwind CSS',
+  title: 'SentraAI - Demo',
+  description: 'A ChatBot made for demonstration purposes to showcase SentraAI.',
 };
 
 export default function RootLayout({
